@@ -5,7 +5,6 @@ import './Friends.css'
 
 const Friends = () => {
   const friends =useLoaderData()
-  //console.log(friends)
   return (
     <div>
       <h3>This is my avable Friends list for react :{friends.length}</h3>
