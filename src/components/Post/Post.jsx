@@ -1,12 +1,18 @@
 import React from 'react';
-import { useRouteLoaderData } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
+import Comments from '../Comments/Comments';
 
 const Post = () => {
-  const data =useRouteLoaderData()
-  console.log(data)
+  const data =useLoaderData()
   return (
     <div>
-      
+       <h1>amar sonar bangla mi tomay valobasi</h1>
+       {
+        data.map(comment=> <Comments 
+        key={comment.id}
+        comment={comment}
+        ></Comments>)
+       }
     </div>
   );
 };

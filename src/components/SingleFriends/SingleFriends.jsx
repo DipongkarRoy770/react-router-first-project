@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const SingleFriends = ({friend}) => {
   const {id}=friend
-  //console.log(id)
   return (
     <div className='friends'>
        <h2>name : {friend.name}</h2>
